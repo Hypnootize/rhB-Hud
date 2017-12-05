@@ -10,24 +10,6 @@
 		"label" "Modified by rhK"
 		"command" "engine showconsole; clear"
 	}
-	"CasualButton"
-	{
-		"label" "Casual" 
-		"command" "play_casual"
-		"subimage" "glyph_practice"
-	}
-	"MvMButton"
-	{
-		"label" "MvM" 
-		"command" "play_mvm"
-		"subimage" "glyph_practice"
-	}
-	"CompetitiveButton"
-	{
-		"label" "Competitive" 
-		"command" "play_competitive"
-		"subimage" "glyph_practice"
-	}
 	"ServerBrowserButton"
 	{
 		"label" "#MMenu_BrowseServers" 
@@ -45,13 +27,6 @@
 		"label" "#MMenu_SteamWorkshop"
 		"command" "engine OpenSteamWorkshopDialog"
 		"subimage" "glyph_practice"
-	}
-	"TrainingButton"
-	{
-		"label" "#TF_Training"
-		"command" "offlinepractice"
-		"subimage" "glyph_practice"
-		"OnlyAtMenu" "1"
 	}
 	"ServerButton6vs6"
 	{
@@ -78,10 +53,8 @@
 	// These buttons get positioned by the MainMenuOverride.res	
 	"CreateServerButton"
 	{
-		"label" "#GameUI_GameMenu_CreateServer"
+		"label" "Create"
 		"command" "OpenCreateMultiplayerGameDialog"
-		"OnlyAtMenu" "1"
-		"tooltip" "Create Server"
 	}
 	"GeneralStoreButton"
 	{
@@ -109,7 +82,7 @@
 	{
 		"label"			""
 		"command"		"callvote"
-		"OnlyAtMenu" "0"
+		"OnlyInGame"	"1"
 		"subimage" "icon_checkbox"
 		"tooltip" "#MMenu_CallVote"
 	}
@@ -125,8 +98,16 @@
 	{
 		"label"			""
 		"command"		"engine cl_coach_find_coach"
-		"OnlyAtMenu" "0"
+		"OnlyInGame"	"1"
 		"subimage" "icon_whistle"
 		"tooltip" "#MMenu_RequestCoach"
+	}
+	"AchievementsButton"
+	{
+		"label"			""
+		"command"		"OpenAchievementsDialog"
+		"OnlyInGame"	"1"
+		"subimage" 		"glyph_achievements"
+		"tooltip" 		"Achievements"
 	}
 }
