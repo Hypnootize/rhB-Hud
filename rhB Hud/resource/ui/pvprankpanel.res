@@ -24,6 +24,11 @@
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -118,6 +123,11 @@
 
 			"paintbackground"	"0"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -182,7 +192,6 @@
 		"tall"			"f40"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"NoBorder"
 		"proportionaltoparent"	"1"
 
 		if_mini
@@ -191,16 +200,15 @@
 			"ypos"			"cs-0.5"
 			"tall"			"35"
 			"wide"			"505"
-			"border"		"MainMenuBGBorder"
 		}
 
 		"NameLabel"
 		{
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
-			"xpos"			"1"
-			"ypos"			"5"
-			"wide"			"120"
+			"xpos"			"65"
+			"ypos"			"0"
+			"wide"			"130"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
@@ -213,22 +221,17 @@
 
 			if_mini
 			{
-				"xpos"			"65"
-				"ypos"			"5"
-				"wide"			"f0"
-				"visible"		"0"
-				"font"			"HudFontSmallishBold"
-				"fgcolor_override"	"TanLight"
+				"visible"	"0"
 			}
 		}
 
-		"LevelLabel"
+		"DescLine1"
 		{
-			"ControlName"	"Label"
-			"fieldName"		"LevelLabel"
-			"xpos"			"1"
-			"ypos"			"20"
-			"wide"			"120"
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine1"
+			"xpos"			"65"
+			"ypos"			"16"
+			"wide"			"130"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
@@ -236,16 +239,63 @@
 			"font"			"latoreg14"
 			"fgcolor_override"	"234 234 234 255"
 			"textAlignment"	"north-west"
-			"labelText"		"%level%"
+			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
-				"wide"	"f0"
-				"font"	"HudFontSmallestBold"
+				"wide"			"195"
+				"font"			"HudFontSmallestBold"
 				"fgcolor_override"	"TanLight"
+			}
+
+			"fonts"
+			{
+				"0"		"latoreg14"
+				"1"		"latoreg14"
+				"2"		"latoreg14"
+			}
+		}
+
+		"DescLine2"
+		{
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine2"
+			"xpos"			"65"
+			"ypos"			"31"
+			"wide"			"130"
+			"zpos"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"latoreg14"
+			"fgcolor_override"	"234 234 234 255"
+			"textAlignment"	"north-west"
+			"labelText"		"%desc2%"
+			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"xpos"	"67"
+				"ypos"	"4"
+				"wide"			"195"
+				"font"			"HudFontSmallestBold"
+				"fgcolor_override"	"TanLight"
+			}
+
+			"fonts"
+			{
+				"0"		"latoreg14"
+				"1"		"latoreg14"
+				"2"		"latoreg14"
+			}
+
+			"colors"
+			{
+				"1"		"CreditsGreen"
+				"2"		"234 234 234 255"
 			}
 		}
 
@@ -253,9 +303,9 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"0"
+			"xpos"			"64"
 			"ypos"			"0"
-			"wide"			"120"
+			"wide"			"130"
 			"tall"			"f0"
 			"proportionaltoparent"	"1"
 
@@ -297,7 +347,7 @@
 					
 					if_mini
 					{
-						"tall"	"20"
+						"tall" "20"
 					}
 				}
 
@@ -320,7 +370,7 @@
 					
 					if_mini
 					{
-						"tall"	"20"
+						"tall" "20"
 					}
 				}
 
