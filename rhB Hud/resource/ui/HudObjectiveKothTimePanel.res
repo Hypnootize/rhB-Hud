@@ -4,6 +4,7 @@
 	{
 		if_match
 		{
+			"ypos"		"0"
 			"zpos"		"5"
 		}
 	}
@@ -22,7 +23,8 @@
 		
 		if_match
 		{
-			
+			"xpos"			"70"
+			"ypos"			"6"
 		}
 		
 		"TimePanelValue"
@@ -38,12 +40,12 @@
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"labelText"		"0:00"
 			
 			if_match
 			{
-				
+				"font"		"Museo12"
 			}
 		}	
 	}
@@ -62,12 +64,13 @@
 		
 		if_match
 		{
-			
+			"xpos"			"101"
+			"ypos"			"6"
 		}
 		
 		"TimePanelValue"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"TimePanelValue"
 			"font"			"ralewayreg16"
 			"fgcolor"		"234 234 234 255"
@@ -78,12 +81,12 @@
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"labelText"		"0:00"
 			
 			if_match
 			{
-				
+				"font"		"Museo12"
 			}
 		}	
 	}
@@ -97,7 +100,7 @@
 		"zpos"				"-5"
 		"wide"				"56"
 		"tall"				"3"
-		"fillcolor"		"234 234 234 255"
+		"fillcolor"			"234 234 234 255"
 		"visible"			"0"
 		"enabled"			"1"
 	}
