@@ -893,11 +893,6 @@
 		{
 			"xpos"			"c-16"
 		}
-		if_mvm
-		{
-		    "visible"   "1"
-		}
-		
 	}
 	"CountdownLabelShadow"
 	{	
